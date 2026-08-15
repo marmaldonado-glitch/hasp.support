@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hasp — Support</title>
+<style>
+:root {
+  --bg: #E9E7E0; --surface: #F1F0EC; --ink: #1C222B; --ink2: #3D4653;
+  --muted: #6A7280; --line: #D6D3C9; --accent: #B87400;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0F131A; --surface: #171C24; --ink: #EDEDE6; --ink2: #B9C0C9;
+          --muted: #8B96A3; --line: #2A323E; --accent: #FFB020; }
+}
+:root[data-theme="dark"] { --bg: #0F131A; --surface: #171C24; --ink: #EDEDE6;
+  --ink2: #B9C0C9; --muted: #8B96A3; --line: #2A323E; --accent: #FFB020; }
+:root[data-theme="light"] { --bg: #E9E7E0; --surface: #F1F0EC; --ink: #1C222B;
+  --ink2: #3D4653; --muted: #6A7280; --line: #D6D3C9; --accent: #B87400; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink2);
+  font: 16px/1.6 -apple-system, system-ui, "Helvetica Neue", sans-serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+.wordmark { font: 900 1.6rem ui-monospace, "SF Mono", Menlo, monospace;
+  letter-spacing: 0.35em; color: var(--ink); margin: 0; }
+.tagline { color: var(--muted); font-size: 0.9rem; margin: 0.25rem 0 0; }
+h1 { color: var(--ink); font-size: 1.6rem; margin: 2.5rem 0 0.5rem; text-wrap: balance; }
+h2 { color: var(--ink); font-size: 1.05rem; margin: 2rem 0 0.5rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.72rem;
+  font-weight: 700; color: var(--accent); margin: 3rem 0 0; }
+p, li { color: var(--ink2); }
+a { color: var(--accent); }
+ol { padding-left: 1.2rem; }
+.card { background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; padding: 1rem 1.25rem; margin: 1rem 0; }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="wordmark">HASP</p>
+    <p class="tagline">Conveyance security inspections · C-TPAT 17-point</p>
+  </header>
+
+  <h1>Support</h1>
+  <p>Questions, problems, or feature requests — email
+  <a href="mailto:mar.maldonado@outlook.com">mar.maldonado@outlook.com</a>.
+  You'll normally hear back within two business days.</p>
+
+  <p class="eyebrow">Getting started</p>
+  <ol>
+    <li>Tap <strong>New inspection</strong> and enter the tractor/trailer numbers and carrier.</li>
+    <li>Walk the 17 points in order. Mark each Pass or Anomaly — anomalies take a note and photo evidence.</li>
+    <li>Close with the seal check: enter the seal number and run VVTT (View, Verify, Tug, Twist), then complete. Export the record as a PDF report or CSV from its summary page.</li>
+  </ol>
+
+  <p class="eyebrow">Frequently asked</p>
+  <h2>Where is my data stored?</h2>
+  <p>Everything — inspection records and photos — lives on your device. Nothing is uploaded anywhere. Your device's normal iCloud backup may include the app's data like any other app.</p>
+
+  <h2>How do I restore my Pro purchase?</h2>
+  <p>On the unlock screen, tap <strong>Restore purchase</strong>. Make sure you're signed in with the same Apple ID that bought Pro. Pro is a one-time purchase tied to your Apple ID, so it carries to a new phone automatically.</p>
+
+  <h2>How do I get a refund?</h2>
+  <p>Purchases are handled by Apple. Request a refund at
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+  <h2>How do I delete a record?</h2>
+  <p>Long-press the record on the home screen and choose <strong>Delete record</strong>. This removes the record and its photos from your device permanently.</p>
+
+  <h2>The CSV opens oddly in my spreadsheet app</h2>
+  <p>Hasp CSVs are UTF-8 with a byte-order mark, which Excel and Numbers open correctly. If your tool asks, choose UTF-8 encoding and comma separators.</p>
+
+  <footer>Hasp · Updated July 19, 2026</footer>
+</main>
+</body>
+</html>
